@@ -1,0 +1,262 @@
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+@import url("http://fonts.cdnfonts.com/css/circular-std-book");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+:root {
+  --black-color: #030304;
+  --nav-color: #3a3a3a;
+  --line: #e9e9e9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  font: 16px "Sofia Pro";
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  display: flex;
+}
+
+header {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+
+header > * {
+  margin-right: 1rem;
+}
+
+header img {
+  width: 16px;
+}
+
+aside {
+  width: 19%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.brand {
+  font-family: "Circular Std Book";
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  font-weight: 700;
+  padding-top: 2rem;
+}
+
+.trademark {
+  font-size: 1.2rem;
+  line-height: 15px;
+  font-weight: 500;
+}
+
+.nav-links {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 95%;
+}
+
+.main-nav > * {
+  margin: 2.6rem 0;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.main-nav a {
+  color: var(--nav-color);
+}
+
+.new-items {
+  display: flex;
+  align-items: center;
+}
+
+.new-items::after {
+  content: "New";
+  background-color: black;
+  opacity: 0.2;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.advert {
+  display: flex;
+  font-size: 44px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  margin: 3rem auto 2rem 0;
+}
+
+.reversed {
+  width: 7rem;
+  color: white;
+  background-color: var(--black-color);
+}
+
+.learn-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 23px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: black;
+  width: 2.5rem;
+  margin: 0 5rem 0 0;
+  display: inline-block;
+}
+
+small {
+  margin-top: 3rem;
+  font-size: 12px;
+  line-height: 19px;
+  margin-left: 2rem;
+}
+
+.content {
+  width: 523px;
+  margin: 9rem 1rem 0 3rem;
+}
+
+.lead {
+  opacity: 0.4;
+  font-size: 21px;
+  line-height: 31.75px;
+}
+
+.heading {
+  font-size: 62px;
+  font-weight: 200;
+  letter-spacing: -0.02em;
+}
+
+.registered {
+  font-size: 1.2rem;
+}
+
+.btn-group {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.btn {
+  font-family: Montserrat;
+  border: 1px solid #808080;
+  color: var(--black-color);
+  background-color: transparent;
+  border-radius: 0.5rem;
+  width: 10rem;
+  padding: 1.2rem;
+  margin: 1rem 0.5rem;
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  line-height: 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn > img {
+  width: 16px;
+}
+
+.cta {
+  background-color: var(--black-color);
+  color: white;
+  margin-left: 0;
+  border: none;
+  font-weight: 500;
+}
+
+figure {
+  text-align: center;
+  position: absolute;
+  right: 5%;
+  bottom: 75px;
+}
+
+.big-number {
+  color: #d6a110;
+  opacity: 0.1;
+  font-size: 22rem;
+  position: absolute;
+  right: 17%;
+  top: -200px;
+}
+
+figure > img {
+  width: 80%;
+}
+
+figcaption {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 14.95px;
+  color: var(--nav-color);
+  font-family: Helvetica;
+}
+
+footer {
+  font-family: "Circular Std Book";
+  font-size: 14px;
+  line-height: 18px;
+  transform-origin: top right;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.social-links {
+  margin-left: 1.5rem;
+}
+
+.social-links > * {
+  margin: auto 8px;
+}
+
+.item-links > * {
+  margin: auto 8px;
+}
