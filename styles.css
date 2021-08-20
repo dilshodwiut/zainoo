@@ -1,6 +1,7 @@
 :root {
   --black-color: #030304;
-  --nav-color: #3a3a3a;
+  --border-color: #808080;
+  --num-color: #d6a110;
   --line: #e9e9e9;
 }
 
@@ -38,28 +39,28 @@ img {
   display: flex;
 }
 
-header {
+.header {
   position: absolute;
   top: 3%;
   right: 3%;
 }
 
-header > * {
+.header__link {
   margin-right: 1rem;
 }
 
-header img {
+.header__icon {
   width: 16px;
 }
 
-aside {
+.sidebar {
   width: 19%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.brand {
+.nav__brand {
   font-family: "Circular Std Book";
   font-size: 2rem;
   font-weight: bold;
@@ -68,37 +69,37 @@ aside {
   padding-top: 2rem;
 }
 
-.trademark {
+.nav__trademark {
   font-size: 1.2rem;
   line-height: 15px;
   font-weight: 500;
 }
 
-.nav-links {
+.nav {
   display: flex;
   flex-flow: column;
   justify-content: center;
   height: 95%;
 }
 
-.main-nav > * {
+.nav__item {
   margin: 2.6rem 0;
   font-size: 22px;
   line-height: 33px;
 }
 
-.main-nav a {
-  color: var(--nav-color);
+.nav__link {
+  opacity: 0.4;
 }
 
-.new-items {
+.nav__item--new {
   display: flex;
   align-items: center;
 }
 
-.new-items::after {
+.nav__item--new::after {
   content: "New";
-  background-color: black;
+  background-color: var(--black-color);
   opacity: 0.2;
   border-radius: 1rem;
   margin-left: 1rem;
@@ -108,7 +109,7 @@ aside {
   line-height: 18px;
 }
 
-.advert {
+.nav__advert {
   display: flex;
   font-size: 44px;
   line-height: 100%;
@@ -122,17 +123,17 @@ aside {
   background-color: var(--black-color);
 }
 
-.learn-more {
+.nav__more {
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 23px;
 }
 
-hr {
+.dash {
   border: none;
   height: 1px;
-  background-color: black;
+  background-color: var(--black-color);
   width: 2.5rem;
   margin: 0 5rem 0 0;
   display: inline-block;
@@ -145,24 +146,24 @@ small {
   margin-left: 2rem;
 }
 
-.content {
+.main__content {
   width: 523px;
   margin: 9rem 1rem 0 3rem;
 }
 
-.lead {
+.main__lead {
   opacity: 0.4;
   font-size: 21px;
   line-height: 31.75px;
 }
 
-.heading {
+.main__heading {
   font-size: 62px;
   font-weight: 200;
   letter-spacing: -0.02em;
 }
 
-.registered {
+.main__registered {
   font-size: 1.2rem;
 }
 
@@ -172,16 +173,11 @@ small {
 }
 
 .btn {
-  font-family: Montserrat;
-  border: 1px solid #808080;
-  color: var(--black-color);
-  background-color: transparent;
+  font: 15px Montserrat;
   border-radius: 0.5rem;
   width: 10rem;
   padding: 1.2rem;
   margin: 1rem 0.5rem;
-  font: inherit;
-  font-size: 15px;
   cursor: pointer;
   line-height: 18px;
   display: flex;
@@ -189,11 +185,13 @@ small {
   align-items: center;
 }
 
-.btn > img {
-  width: 16px;
+.btn--ordinary {
+  border: 1px solid var(--border-color);
+  color: var(--black-color);
+  background-color: transparent;
 }
 
-.cta {
+.btn--cta {
   background-color: var(--black-color);
   color: white;
   margin-left: 0;
@@ -201,15 +199,19 @@ small {
   font-weight: 500;
 }
 
-figure {
+.btn__icon {
+  width: 16px;
+}
+
+.product {
   text-align: center;
   position: absolute;
   right: 5%;
   bottom: 75px;
 }
 
-.big-number {
-  color: #d6a110;
+.product__num {
+  color: var(--num-color);
   opacity: 0.1;
   font-size: 22rem;
   position: absolute;
@@ -217,11 +219,11 @@ figure {
   top: -200px;
 }
 
-figure > img {
+.product__img {
   width: 80%;
 }
 
-figcaption {
+.product__slider {
   font-size: 13px;
   font-weight: 700;
   line-height: 14.95px;
@@ -229,7 +231,7 @@ figcaption {
   font-family: Helvetica;
 }
 
-footer {
+.footer {
   font-family: "Circular Std Book";
   font-size: 14px;
   line-height: 18px;
@@ -245,14 +247,10 @@ footer {
   font-weight: bold;
 }
 
-.social-links {
+.footer__social {
   margin-left: 1.5rem;
 }
 
-.social-links > * {
-  margin: auto 8px;
-}
-
-.item-links > * {
+.footer__link {
   margin: auto 8px;
 }

@@ -18,36 +18,44 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <a href="#">
-          <img src="assets/search.svg" alt="Search" />
+      <header class="header">
+        <a class="header__link" href="#">
+          <img class="header__icon" src="assets/search.svg" alt="Search" />
         </a>
-        <a href="#">
-          <img src="assets/shopping-cart.svg" alt="Shopping Cart" />
+        <a class="header__link" href="#">
+          <img
+            class="header__icon"
+            src="assets/shopping-cart.svg"
+            alt="Shopping Cart"
+          />
         </a>
-        <a href="#">
-          <img src="assets/user.svg" alt="User" />
+        <a class="header__link" href="#">
+          <img class="header__icon" src="assets/user.svg" alt="User" />
         </a>
       </header>
-      <aside>
+      <aside class="sidebar">
         <nav>
-          <ul class="nav-links">
-            <li class="brand">
-              <a href="#">zainoo<sup class="trademark">&trade;</sup></a>
+          <ul class="nav">
+            <li class="nav__brand">
+              <a href="#">zainoo<sup class="nav__trademark">&trade;</sup></a>
             </li>
-            <div class="main-nav">
-              <li><a href="#">Shoes</a></li>
-              <li><a href="#">Bags</a></li>
-              <li class="new-items"><a href="#">Accessories</a></li>
-              <li><a href="#">Support</a></li>
+            <div class="nav__items">
+              <li class="nav__item"><a class="nav__link" href="#">Shoes</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Bags</a></li>
+              <li class="nav__item nav__item--new">
+                <a class="nav__link" href="#">Accessories</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Support</a>
+              </li>
             </div>
             <li>
-              <div class="advert">
+              <div class="nav__advert">
                 <div class="reversed">Extra Care</div>
                 <div>Foot Tech</div>
               </div>
-              <div class="learn-more">
-                <hr />
+              <div class="nav__more">
+                <hr class="dash" />
                 <a href="#">learn more</a>
               </div>
             </li>
@@ -55,43 +63,58 @@
         </nav>
         <small>Scroll down</small>
       </aside>
-      <main>
-        <div class="content">
-          <p class="lead">The best looks; Top Comfort</p>
-          <h1 class="heading">
-            Comfy Maxer<sup class="registered">&reg;</sup>
+      <main class="main">
+        <div class="main__content">
+          <p class="main__lead">The best looks; Top Comfort</p>
+          <h1 class="main__heading">
+            Comfy Maxer<sup class="main__registered">&reg;</sup>
           </h1>
-          <p class="lead">
+          <p class="main__lead">
             Our shoes fuse together an insole that cushions every move, laces,
             that you'll never need to tie again, and an odor-fighting copper
             thread lining.
           </p>
           <div class="btn-group">
-            <button class="btn cta">
-              <img src="assets/shopping-bag.svg" alt="Shopping Bag" /> Add To
-              Cart
+            <button class="btn btn--cta">
+              <img
+                class="btn__icon"
+                src="assets/shopping-bag.svg"
+                alt="Shopping Bag"
+              />
+              Add To Cart
             </button>
-            <button class="btn">
-              <img src="assets/play-button.svg" alt="Play Button" /> Watch Intro
+            <button class="btn btn--ordinary">
+              <img
+                class="btn__icon"
+                src="assets/play-button.svg"
+                alt="Play Button"
+              />
+              Watch Intro
             </button>
           </div>
         </div>
-        <figure>
-          <div class="big-number">94</div>
-          <img src="assets/shoe3.png" alt="Product - Shoe" sizes="" srcset="" />
-          <figcaption>01 / 04</figcaption>
+        <figure class="product">
+          <div class="product__num">94</div>
+          <img
+            class="product__img"
+            src="assets/shoe3.png"
+            alt="Product - Shoe"
+            sizes=""
+            srcset=""
+          />
+          <figcaption class="product__slider">01 / 04</figcaption>
         </figure>
       </main>
-      <footer>
-        <div class="social-links">
-          <a href="#">fb</a>
-          <a href="#">tw</a>
-          <a href="#">in</a>
+      <footer class="footer">
+        <div class="footer__social">
+          <a class="footer__link" href="#">fb</a>
+          <a class="footer__link" href="#">tw</a>
+          <a class="footer__link" href="#">in</a>
         </div>
-        <div class="item-links">
-          <a href="#">manufacturing</a>
-          <a href="#">packaging</a>
-          <a href="#">team</a>
+        <div class="footer__service">
+          <a class="footer__link" href="#">manufacturing</a>
+          <a class="footer__link" href="#">packaging</a>
+          <a class="footer__link" href="#">team</a>
         </div>
       </footer>
     </div>
